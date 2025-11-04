@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --white: hsl(0,0%,100%);
+      --slate-300: hsl(212,45%,89%);
+      --slate-500: hsl(216,15%,48%);
+      --slate-900: hsl(218,44%,22%);
+    }
+    html,body{height:100%;}
+    body{
+      font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      display:flex;align-items:center;justify-content:center;
+      margin:0;background:var(--slate-300);}
+    .card{background:var(--white);border-radius:16px;padding:24px;max-width:320px;width:92%;box-shadow:0 20px 30px rgba(16,24,40,0.08);text-align:center}
+    .qr-image{display:block;margin:0 auto;border-radius:8px;width:200px;height:200px;object-fit:cover}
+    h1{margin:18px 0 12px 0;font-size:18px;color:var(--slate-900);font-weight:700;line-height:1.15}
+    p.lead{margin:0 0 18px 0;color:var(--slate-500);font-size:15px}
+    .attribution{font-size:13px;color:var(--slate-500);margin-top:8px}
+    .attribution a{color:var(--slate-900);text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+
+  <main class="card" role="main">
+    <picture aria-hidden="true">
+      <img class="qr-image" src="./images/image-qr-code.png" alt="QR code" />
+    </picture>
+
+    <h1>Improve your front-end skills by building projects</h1>
+    <p class="lead">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Samuel idowu </a>.
+    </div>
+  </main>
+</body>
+</html>
